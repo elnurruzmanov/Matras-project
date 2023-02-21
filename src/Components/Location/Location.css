@@ -1,0 +1,1291 @@
+.zakaz-main {
+  margin: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  display: block;
+  background-color: black;
+  border: 1px solid black;
+}
+
+thead {
+  background-color: #01384d;
+}
+
+tr,
+td,
+tbody {
+  display: block;
+}
+
+tr {
+  padding-bottom: 10px;
+  color: white;
+}
+
+td {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+
+td:before {
+  content: attr(data-title);
+  color: #7a91aa;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+thead th {
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+}
+
+.button {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px 25px;
+  background: #d2ba6c;
+  border-radius: 3px;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+tbody {
+  color: black;
+  background-color: white;
+}
+
+tr {
+  background-color: white;
+}
+
+td {
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+.select {
+  padding-bottom: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.zakaz-main {
+  height: 70vh;
+  overflow-y: scroll;
+  margin: 30px;
+  margin-bottom: 100px;
+}
+
+.delete-btn {
+  margin-right: 10px;
+}
+
+.fructs {
+  width: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.zakaz-button {
+  background: #01384d !important;
+  border-radius: 8px !important;
+  padding:11px 34px !important;
+}
+
+.icons-td {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.count-td {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.zakaz-page{
+  position: relative;
+}
+
+.zakaz-button{
+  position: absolute;
+  right: 10%;
+}
+
+@media (min-width: 280px) {
+  .zakaz-main {
+    margin: 20px 10px;
+  }
+
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  button {
+    padding: 2px 4px;
+    font-size: 10px;
+    font-weight: 100;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 4px;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 8px;
+    padding: 1px;
+  }
+
+  body .main .select button {
+    padding: 1px;
+    font-weight: 100;
+    font-size: 9px;
+  }
+
+  .switch {
+    width: 22px;
+    height: 14px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(6px);
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  .zakaz-count {
+    margin: 0px 1px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 1px;
+    width: 14px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .plus-btn {
+    background: rgba(22, 208, 18, 0.53);
+    border-radius: 5px;
+    padding: 1px;
+    width: 14px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .refresh-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-button {
+    cursor: pointer;
+    margin-top: 30px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 14px;
+    transition: 0.3s;
+    z-index: -10;
+    z-index: -100;
+  }
+
+  .zakaz-button:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 420px) {
+  .zakaz-main {
+    margin: 20px 10px;
+  }
+
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  main table tbody .select button {
+    padding: 4px 3px;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 10px;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  .main td,
+  .main th {
+    padding: 6px;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+
+  .switch {
+    width: 32px;
+    height: 18px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 15px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(10px);
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  .zakaz-count {
+    margin: 0px 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 4px;
+    width: 18px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .plus-btn {
+    background: rgba(22, 208, 18, 0.53);
+    border-radius: 5px;
+    padding: 4px;
+    width: 18px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .refresh-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-button {
+    cursor: pointer;
+    margin-top: 30px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 18px;
+
+    z-index: 10000;
+    z-index: -100;
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 520px) {
+  .zakaz-main {
+    margin: 20px 10px;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  body .main .select button {
+    padding: 5px;
+  }
+
+  .select {
+    padding: 10px;
+  }
+
+  .switch {
+    width: 32px;
+    height: 18px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 15px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(10px);
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  .zakaz-count {
+    margin: 0px 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 4px;
+    width: 18px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .plus-btn {
+    background: rgba(22, 208, 18, 0.53);
+    border-radius: 5px;
+    padding: 4px;
+    width: 18px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: none;
+  }
+
+  .refresh-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-button {
+    cursor: pointer;
+    margin-top: 30px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 18px;
+
+    z-index: 10000;
+    z-index: -100;
+  }
+}
+
+@media (min-width: 630px) {
+  .zakaz-main {
+    margin: 20px;
+  }
+
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 14px;
+    padding: 2px;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  td,
+  th {
+    padding: 10px;
+  }
+
+  body .main .select button {
+    padding: 5px 8px;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+
+  .switch {
+    width: 40px;
+    height: 22px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 20px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(12px);
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .zakaz-count {
+    margin: 0px 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 5px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+  }
+
+  .plus-btn {
+    background: rgba(22, 208, 18, 0.53);
+    border-radius: 5px;
+    padding: 5px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+  }
+
+  .refresh-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-button {
+    cursor: pointer;
+    margin-top: 30px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 18px;
+
+    z-index: 10000;
+    z-index: -100;
+  }
+}
+
+@media (min-width: 720px) {
+  .zakaz-main {
+    margin: 30px;
+  }
+
+  table {
+    display: table;
+  }
+
+  body .main .select button {
+    padding: 12px;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 18px;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  body .main td,
+  body .main th {
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+
+  body .main .select button {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 25px;
+    background: #d2ba6c;
+    border-radius: 3px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  .zakaz-count {
+    margin: 0px 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: 30px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .plus-btn {
+    background: rgba(22, 208, 18, 0.53);
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: 30px;
+    height: 25px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .refresh-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-button {
+    cursor: pointer;
+    margin-top: 30px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 18px;
+
+    z-index: 10000;
+    z-index: -100;
+  }
+}
+
+@media (min-width: 920px) {
+  .zakaz-main {
+    margin: 30px;
+  }
+
+  table {
+    display: table;
+  }
+
+  body .main .select button {
+    padding: 12px;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  body .main td,
+  body .main th {
+    display: table-cell;
+    font-size: 18px;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td:before {
+    display: none;
+  }
+
+  body .main td,
+  body .main th {
+    padding: 6px;
+    text-align: center;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+
+  body .main .select button {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 25px;
+    background: #d2ba6c;
+    border-radius: 3px;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .zakaz-main .count-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .zakaz-count {
+    margin: 0px 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+
+  .minus-btn {
+    background: rgba(205, 60, 95, 0.53);
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .minus-btn:hover {
+    background-color: rgb(222, 26, 26);
+    transform: scale(1.2);
+  }
+  .plus-btn {
+    background: rgba(44, 201, 41, 0.53);
+    border-radius: 5px;
+    padding: 5px 8px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .plus-btn:hover {
+    background-color: rgba(255, 200, 0, 0.53);
+    transform: scale(1.2);
+  }
+
+  .refresh-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .refresh-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 3s;
+  }
+
+  .refresh-btn:hover {
+    transform: rotate(360deg);
+  }
+
+  .zakaz-page {
+    position: relative;
+  }
+
+  .zakaz-page .zakaz-button {
+    margin-top: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 77%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+
+    z-index: 10000;
+    z-index: -100;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .zakaz-page .zakaz-button {
+    width: 20%;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #222;
+    padding: 6px 00px;
+    cursor: pointer;
+    z-index: 15;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .zakaz-page .zakaz-button span {
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    /* color: red */
+  }
+
+  .container .zakaz-page .zakaz-button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    top: 0;
+    height: 490%;
+    width: 197%;
+    background-color: black;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-80%) translateY(-25%) rotate(45deg);
+  }
+
+  .zakaz-page .zakaz-button:hover::after {
+    cursor: pointer;
+  }
+}
+
+.zakaz-main table thead tr {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+}
+
+body .zakaz-indicator {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 20%;
+  left: 96.5%;
+  z-index: 11;
+  transform: rotate(360deg);
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgb(255 238 6 / 35%);
+
+  animation-name: animation;
+  animation-duration: 2s;
+  animation: animate 1s linear infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+body .zakaz-indicator img {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes animate {
+  0% {
+    border-color: #fff;
+    transform: translateY(0px);
+    animation-duration: 3;
+  }
+
+  100% {
+    transform: translateY(60px);
+    border-color: #ffd64a;
+  }
+}

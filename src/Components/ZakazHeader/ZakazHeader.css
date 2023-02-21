@@ -1,0 +1,97 @@
+.zakazHeader {
+    background:#01384D;
+    color: white;
+    /* width: 1100px; */
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 27px;
+}
+
+
+
+.zakazHeader-input {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    width: 383px;
+    font-size: 15px;
+    border: 1px solid black;
+    
+}
+
+.zakazHeader-input:hover{
+    border: 1px solid #D2BA6C;
+    color: #D2BA6C;
+
+    cursor: pointer;
+}
+
+.zakazHeader-avatar {
+    padding: 10px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+
+}
+
+.zakazHeader-account {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    /* align-items: center; */
+}
+
+.zakazHeader-span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.zakazHeader-form{
+    position: relative;
+}
+
+.zakazHeader-search{
+    position: absolute;
+    top: 40%;
+    left: 94%;
+    transform: translate(-50%,-50%);
+    
+    width: 16px;
+    height: 16px;
+}
+
+.menu-btns{
+    display: none;
+}
+
+.zakaz-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zakaz-left select{
+    margin-left: 20px;
+    background: #FFFFFF;
+border-radius: 10px;
+padding:8px 10px;
+width: 360px;
+transition: 0.3s;
+cursor: pointer;
+}
+.zakaz-left select:hover{
+    border: 1px solid #D2BA6C;
+    color: #D2BA6C;
+}
+
+
